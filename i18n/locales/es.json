@@ -1,0 +1,26 @@
+{
+  "common": {
+    "userStats": "Estadísticas del usuario",
+    "users": "Usuarios",
+    "followersCount": "{{count}} seguidores",
+    "followingCount": "Siguiendo a {{count}} usuarios",
+    "repositoriesCount": "{{count}} repositorios",
+    "viewUserDetails": "Ver detalles de {{username}}",
+    "username": "Usuario: {{username}}",
+    "githubProfile": "Perfil de GitHub de {{username}}",
+    "search": "Buscar",
+    "clearSearch": "Limpiar búsqueda",
+    "favorites": "Favoritos",
+    "details": "Detalles",
+    "followers": "Seguidores",
+    "following": "Siguiendo",
+    "repositories": "Repositorios",
+    "addToFavorites": "Agregar a favoritos",
+    "removeFromFavorites": "Quitar de favoritos",
+    "searchPlaceholder": "Buscar usuarios de GitHub",
+    "noResults": "No se encontraron resultados",
+    "loading": "Cargando...",
+    "noFavorites": "No hay favoritos",
+    "noFavoritesDescription": "Explora usuarios de GitHub y añade tus favoritos!"
+  }
+}

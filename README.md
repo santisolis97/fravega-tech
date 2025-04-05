@@ -1,50 +1,100 @@
-# Welcome to your Expo app 👋
+# GitHub User Explorer 🚀
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A React Native application built with Expo that allows you to explore GitHub users, view their profiles, and manage your favorites. The app showcases modern React Native development practices, clean architecture, and a polished user interface.
 
-## Get started
+## Features ✨
 
-1. Install dependencies
+- Browse GitHub users
+- Search users by username
+- View detailed user profiles including:
+  - Profile picture and bio
+  - Location, email, and blog information
+  - Follower and repository statistics
+- Add/remove users to favorites
+- Persistent favorites storage
 
+## Tech Stack 🛠️
+
+- **Framework**: [Expo](https://expo.dev) with React Native
+- **State Management**: [Zustand](https://github.com/pmndrs/zustand)
+- **Data Fetching**: [React Query](https://tanstack.com/query)
+- **Navigation**: React Navigation 6
+- **UI Components**: React Native Paper
+- **Icons**: Expo Vector Icons
+- **Storage**: AsyncStorage for persistence
+- **API**: GitHub REST API
+
+## Getting Started 🚀
+
+1. Clone the repository:
+   ```bash
+   git clone <your-repo-url>
+   cd github-user-explorer
+   ```
+
+2. Install dependencies:
    ```bash
    npm install
    ```
 
-2. Start the app
-
+3. Start the development server:
    ```bash
-    npx expo start
+   npm run start
    ```
 
-In the output, you'll find options to open the app in a
+4. Run on your preferred platform:
+   - Press `i` for iOS simulator
+   - Press `a` for Android emulator
+   - Scan QR code with Expo Go app for physical devices
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Project Structure 📁
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```
+src/
+├── components/      # Reusable UI components
+├── screens/         # Screen components
+├── navigation/      # Navigation configuration
+├── services/        # API and external services
+├── hooks/           # Custom React hooks
+├── store/           # Global state management
+├── types/           # TypeScript type definitions
+├── theme/           # Theme and styling constants
+├── i18n/            # Internationalization configuration
+└── __tests__/       # Test suites
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Code Style and Best Practices 💅
 
-## Learn more
+- TypeScript for type safety
+- Component-based architecture
+- Custom hooks for business logic
+- Clean code principles
 
-To learn more about developing your project with Expo, look at the following resources:
+## Internationalization (i18n) 🌍
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+The app uses `react-i18next` for internationalization, supporting multiple languages:
 
-## Join the community
+- Centralized translation management
+- Easy language switching
+- Support for English (en) and Spanish (es)
+- Dynamic translation interpolation
 
-Join our community of developers creating universal apps.
+### Key Features
+- Language-specific JSON files in `i18n/locales/`
+- Automatic language detection
+- Fallback language support
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## Testing 🧪
+
+The project uses a comprehensive testing strategy:
+
+### Testing Tools
+- Jest for unit and integration testing
+- React Native Testing Library for component testing
+
+
+### Running Tests
+```bash
+# Run all tests
+npm test
+```
