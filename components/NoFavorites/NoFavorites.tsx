@@ -4,11 +4,11 @@ import { Text } from 'react-native-paper';
 import { Ionicons } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { colors } from '../theme/colors';
+import { colors } from '@/theme/colors';
 import { TabParamList } from '@/navigation/types';
 import { BottomTabNavigationProp } from '@react-navigation/bottom-tabs';
 import { useTranslation } from 'react-i18next';
-import { Button } from './base/Button';
+import { Button } from '@/components/Button/Button';
 
 export function NoFavorites() {
   const navigation = useNavigation<BottomTabNavigationProp<TabParamList, 'Favorites'>>();

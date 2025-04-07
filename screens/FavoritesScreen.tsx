@@ -1,12 +1,12 @@
 import React from 'react';
 import { View, FlatList, StyleSheet } from 'react-native';
 import { useFavoritesStore } from '../store/favorites';
-import { UserCard } from '../components/UserCard';
-import { NoFavorites } from '../components/NoFavorites';
 import { colors } from '../theme/colors';
 import { useNavigation } from '@react-navigation/native';
 import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../navigation/types';
+import { NoFavorites } from '@/components/NoFavorites/NoFavorites';
+import { UserCard } from '@/components/UserCard/UserCard';
 
 export default function FavoritesScreen() {
   const navigation = useNavigation<NativeStackNavigationProp<RootStackParamList>>();

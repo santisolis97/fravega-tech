@@ -8,14 +8,15 @@ import {
 } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
-import { useUsers, useSearchUsers } from '../hooks/useGithubUsers';
-import { UserCard } from '../components/UserCard';
 import { SearchBar } from '../components/SearchBar/SearchBar';
 import { useFavoritesStore } from '../store/favorites';
 import { colors } from '../theme/colors';
 import type { RootStackParamList } from '../navigation/types';
 import { Text } from 'react-native-paper';
 import { useTranslation } from 'react-i18next';
+import { useUsers } from '@/hooks/useUsers';
+import { useSearchUsers } from '@/hooks/useSearchUsers';
+import { UserCard } from '@/components/UserCard/UserCard';
 
 export default function HomeScreen() {
   const {t} = useTranslation();

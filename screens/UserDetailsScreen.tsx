@@ -4,11 +4,11 @@ import { Ionicons } from '@expo/vector-icons';
 import { Text, ActivityIndicator } from 'react-native-paper';
 import { useRoute } from '@react-navigation/native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { useUserDetails } from '../hooks/useGithubUsers';
 import { useFavoritesStore } from '../store/favorites';
-import { Button } from '../components/base/Button';
-import { UserStats } from '../components/UserStats';
+import { Button } from '../components/Button/Button';
+import { UserStats } from '../components/UserStats/UserStats';
 import { colors } from '../theme/colors';
+import { useUserDetails } from '@/hooks/useUserDetails';
 
 export default function UserDetailsScreen() {
   return <UserDetailsContent />;

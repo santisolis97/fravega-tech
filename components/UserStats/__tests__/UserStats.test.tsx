@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react-native';
-import { UserStats } from '../index';
+import { UserStats } from '../UserStats';
 
 jest.mock('react-i18next', () => ({
   useTranslation: () => ({

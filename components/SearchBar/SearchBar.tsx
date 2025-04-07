@@ -11,7 +11,7 @@ import {
 } from 'react-native';
 import { useTranslation } from 'react-i18next';
 import { colors } from '../../theme/colors';
-import { Button } from '../base/Button';
+import { Button } from '../Button/Button';
 
 interface SearchBarProps {
   value: string;

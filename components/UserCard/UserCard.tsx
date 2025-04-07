@@ -1,9 +1,9 @@
 import React from 'react';
 import { StyleSheet, View, Image, Text, Pressable } from 'react-native';
 import { useTranslation } from 'react-i18next';
-import { GithubUser } from '../types/github';
-import { colors } from '../theme/colors';
-import { Button } from './base/Button';
+import { GithubUser } from '@/types/github';
+import { colors } from '@/theme/colors';
+import { Button } from '@/components/Button/Button';
 
 interface UserCardProps {
   user: GithubUser;
